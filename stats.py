@@ -22,9 +22,9 @@ def main():
 
             except ValueError:
                 # If conversion fails, assume it's a list of words
-            words = [item.upper() for item in content]  # Convert words to uppercase for case-insensitivity
-            print("Words from file:", words)
-            print("Mode (most frequent word):", mode.mode(words))  # Mode for words (strings)
+                words = [item.upper() for item in content]  # Convert words to uppercase for case-insensitivity
+                print("Words from file:", words)
+                print("Mode (most frequent word):", mode.mode(words))  # Mode for words (strings)
 
     except FileNotFoundError:
         print("File not found. Please check the file name and try again.")
